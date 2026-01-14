@@ -1,7 +1,4 @@
-function downloadCV() {
-  window.open("assets/Joseph-seye.pdf", "_blank");
-}
-
-function openWhatsApp() {
-  window.open("https://wa.me/+2348105033804", "_blank");
+function toggleMenu() {
+  const menu = document.getElementById("nav-menu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 }
