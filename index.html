@@ -2,98 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Digital Enterprenure</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayinmode Joseph Seye | Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
-<div class="container">
+<!-- NAVBAR -->
+<header class="navbar">
+  <h2 class="logo">OluSeye<span>.</span></h2>
+  <nav id="nav-menu">
+    <a href="#about">About</a>
+    <a href="https://joseyluvers.github.io/Portable-Portfolio-Cv/">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="https://wa.me/+2348105033804">Contact</a>
+  </nav>
+  <i class="fas fa-bars menu-icon" onclick="toggleMenu()"></i>
+</header>
 
-  <!-- LEFT PROFILE CARD -->
-  <div class="profile-card">
-    <div class="avatar">
-      <img src="assets/avatar.jpeg" alt="Avatar">
-
-    </div>
-
-    <h2>Ayinmode Joseph Seye</h2>
-    <h4>Digital Enterprenure</h4>
-
-    <div class="socials">
-      <a href="https://web.facebook.com/Joseyluvers"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="https://github.com/Joseyluvers"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/ayinmode-joseph-seye/"><i class="fab fa-linkedin"></i></a>
-    </div>
-
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm <span>Ayinmode Joseph Seye</span></h1>
+    <h3>Software Developer & Digital Entrepreneur</h3>
     <p>
-      I am a Digital Entrepreneur and certified Software Developer (FGN 3MTT). I work with Moniepoint as a 
-Business Relationship Manager, run CashKrinTech as a YouTuber and tech blogger, and offer professional 
-video and photography services.
+      Certified Software Developer (FGN 3MTT) with experience in
+      Full-Stack Development, Business Relationship Management,
+      and Digital Growth.
     </p>
 
-    <div class="buttons">
-      <button onclick="downloadCV()">Download CV</button>
-      <button class="outline" onclick="openWhatsApp()">Contact Me</button>
+    <div class="hero-buttons">
+      <a href="assets/Joseph-Seye.pdf" download class="btn primary">Download CV</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://web.facebook.com/Joseyluvers" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/Joseyluvers" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ayinmode-joseph-seye/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </div>
 
-  <!-- RIGHT EXPERIENCE SECTION -->
-  <div class="experience" id="experience">
-    <h2>Work Experience</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <span class="year">2020 - 2021</span>
-        <h3>•	Federal Teachers Scheme </h3>
-        <p>
-          •	Federal Teachers Scheme “Ubec” (Teacher) In St. Joseph Senior Secondary School.  2020 – 2021.
-        </p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="year">2025</span>
-        <h3>Moniepoint</h3>
-        <p>
-          BRM ( Moniepoint ) April 28th 2025 – Till date.
-        </p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="year">2025</span>
-        <h3>Rosabon Financial Services</h3>
-        <p>
-          Rosabon Financial Services ( Sales Executive/wealth mgt ) – June 2nd 2025- July 28th 2025 .
-        </p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="year"></span>
-        <h3>Software Development</h3>
-        <p>
-          CEO/Founder Cashkrintech | Full-Stack Developer | React, Node.js, APIs | Build Clean, Meaintainable & Scalable Software.
-        </p>
-      </div>
-
-      <div class="timeline-item">
-        <span class="year">Soft Skills</span>
-        <h3></h3>
-        <p>
-          writing,Proficiency in MS-Office Tools “Excel, MS word, PowerPoint 
-| Certified Teacher with good communication & teaching skills. 
-| Project Management, Remote business strategist, Tech Reviewer. 
-| Sales Executive & Wealth management 
-| Helping Businesses Grow .
-        </p>
-      </div>
-
-    </div>
+  <div class="hero-image">
+    <img src="assets/avatar.jpg" alt="Ayinmode Joseph Seye">
   </div>
+</section>
 
-</div>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a Digital Entrepreneur and certified Software Developer.
+    I work with Moniepoint as a Business Relationship Manager,
+    run Cashkrintech as a tech brand, and help businesses grow
+    using modern software solutions.
+  </p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section gray">
+  <h2>Work Experience</h2>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <p><h3>Moniepoint</h3></p>
+      <span>Business Relationship Manager | April 2025 – Present</span>
+      <p>Managing merchant relationships, onboarding businesses, and driving growth.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Rosabon Financial Services</h3>
+      <span>Sales Executive / Wealth Management | June – July 2025</span>
+      <p>Client acquisition, financial advisory, and wealth management solutions.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Federal Teachers Scheme (UBEC)</h3>
+      <span>Teacher | 2020 – 2021</span>
+      <p>Teaching and mentoring secondary school students.</p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Software Development</h3>
+      <span>CEO/Founder Cashkrintech | Full-Stack Developer|</span>
+      <p>Build Clean, Meaintainable & Scalable Software | React, Node.js, APIs.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>API Development</span>
+    <span>Project Management</span>
+    <span>MS Office Tools</span>
+    <span>Sales & Wealth Management</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section gray">
+  <h2>Contact Me</h2>
+  <p>Let’s work together or discuss opportunities.</p>
+
+  <a class="btn primary" 
+     href="https://wa.me/+2348105033804" 
+     target="_blank">
+     Message Me on WhatsApp
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Joseyluvers. All Rights Reserved.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
